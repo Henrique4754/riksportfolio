@@ -124,7 +124,7 @@ button:hover {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2)
 }
 
-@media (max-width: 425px) {
+@media (max-width: 428px) {
   body{
     width: 428px;
     height: 926px;
@@ -134,7 +134,7 @@ button:hover {
     background-color: #264653;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 50%;
+    height: 70px;
   }
   .buttonav {
     font-size: 8pt;
