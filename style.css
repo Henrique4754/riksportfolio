@@ -18,7 +18,7 @@ body {
   background-color: #264653;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 50%;
+  height: 70%;
 }
 .navbar .logosite{
   display: flex;
@@ -69,15 +69,14 @@ button:hover {
 .gridmod2 {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  grid-template-rows: auto auto;
   grid-template-areas:
     "imagem texto1"
     "imagem texto2";
   gap: 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 10px;
 }
-
 .imagem {
   grid-area: imagem;
 }
@@ -123,41 +122,99 @@ button:hover {
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2)
 }
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-@media (max-width: 428px) {
-  body{
-    width: 428px;
-    height: 926px;
+  .logosite img {
+    height: 40px;
   }
-  .navbar{
-    display: flex;
-    background-color: #264653;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 70px;
-  }
+
   .buttonav {
-    font-size: 8pt;
-    width: 130px;
-    height: 20px;
-    border-radius: 15px;
-    border: none;
-    background-color: #2a9d8f;
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
+    font-size: 9pt;
+    padding: 8px 12px;
   }
 
   .buttongrid {
-    display: flexbox;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    flex-direction: column;
+    width: 100%;
   }
-  .botaobox .buttonav{
-    display: block;
+}
+
+@media (max-width: 600px) {
+  /* Navbar melhor centralizada */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 10px 0;
   }
- }
+
+   .logosite img {
+    height: 40px;
+  }
+
+
+  .buttongrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .botaobox {
+    margin: 5px;
+  }
+
+  .buttonav .text {
+    font-size: 10pt; /* diminui um pouco para caber melhor */
+    padding: 5px 10px;
+    width: auto;
+    min-width: 120px;
+  }
+
+  
+
+  /* Grid se torna coluna */
+  .gridmod2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "imagem"
+      "texto1"
+      "texto2";
+    justify-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  /* Ajuste da imagem */
+  .imagem img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Ajuste do vídeo */
+  .videopeq {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; 
+  }
+
+  /* Ajuste no texto */
+  .texto {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
