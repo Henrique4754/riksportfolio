@@ -91,7 +91,7 @@ button:hover {
 }
 
 .texto {
-  text-align: justify;
+  text-align: center;
   height: 300px;
   background-color: #f1faee;
   color: #333333;
@@ -101,7 +101,7 @@ button:hover {
 }
 
 .longtext {
-  text-align: justify;
+  text-align: center;
   height: 610px;
   background-color: #f1faee;
   color: #333333;
