@@ -224,6 +224,7 @@ button:hover {
 
   /* Ajuste no texto */
   .texto {
+    height: auto;
     max-width: 95%;
     margin: 0 auto;
   }
