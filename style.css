@@ -121,6 +121,13 @@ button:hover {
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2)
 }
+footer{margin-top: 177px;
+  font-size: 8pt;
+  color: white;
+  background-color: #264653;
+  text-align: center;
+
+}
 @media (max-width: 300px) {
   .navbar {
     flex-direction: column;
